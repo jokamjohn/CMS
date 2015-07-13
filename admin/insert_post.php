@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Insert Post</title>
@@ -47,7 +48,7 @@
 
         <tr>
             <td><label>
-                    <input type="submit" value="Publish Post"/>
+                    <input type="submit" value="Publish Post" name="submit"/>
                 </label></td>
         </tr>
 
@@ -55,3 +56,23 @@
 </form>
 </body>
 </html>
+
+<?php
+$connect = mysqli_connect("localhost","root","Kags02244","cms");
+mysqli_select_db($connect,"cms");
+
+
+if(isset($_POST['submit'])){
+    echo $post_title = $_POST['title'];
+    echo $post_author = $_POST['author'];
+    echo $post_keywords = $_POST['keywords'];
+    echo $post_image = $_FILES['image'] ['name'];
+    echo $post_content = $_POST['content'];
+}
+
+
+?>
+
+
+
+
