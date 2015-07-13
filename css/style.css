@@ -43,3 +43,36 @@ body{
     height: 80px;
     clear: both;
 }
+
+#logo {
+    float: left;
+}
+
+#banner {
+    float: right;
+}
+
+#ul {
+    padding: 10px;
+
+}
+
+#ul li {
+    list-style: none;
+    display: inline;
+}
+
+#ul li a:link {
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 5px;
+    border: 1px black;
+    color: white;
+}
+
+#ul li a:hover {
+    font-size: 18px;
+    font-family: sans-serif;
+    background: orange;
+}
