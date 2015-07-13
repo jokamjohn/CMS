@@ -4,6 +4,7 @@
 </head>
 <body>
 <form action="insert_post.php" method="post" enctype="multipart/form-data">
+
     <table align="center">
         <tr>
             <td align="center"><h1>New Post</h1></td>
@@ -43,6 +44,13 @@
                     <textarea name="content" id="content" cols="30" rows="10"></textarea>
                 </label></td>
         </tr>
+
+        <tr>
+            <td><label>
+                    <input type="submit" value="Publish Post"/>
+                </label></td>
+        </tr>
+
     </table>
 </form>
 </body>
