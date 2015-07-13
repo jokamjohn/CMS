@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>CMS Project</title>
+    <link rel="stylesheet" href="css/style.css" media="all"/>
 </head>
 
 <!-- Created by John Kagga.-->
