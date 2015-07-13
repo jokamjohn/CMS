@@ -63,11 +63,36 @@ mysqli_select_db($connect,"cms");
 
 
 if(isset($_POST['submit'])){
-    echo $post_title = $_POST['title'];
-    echo $post_author = $_POST['author'];
-    echo $post_keywords = $_POST['keywords'];
-    echo $post_image = $_FILES['image'] ['name'];
-    echo $post_content = $_POST['content'];
+     $post_title = $_POST['title'];
+     $post_author = $_POST['author'];
+     $post_date = date('d-m-y');
+     $post_keywords = $_POST['keywords'];
+     $post_image = $_FILES['image'] ['name'];
+     $image_tmp =$_FILES['image']['tmp_name'];
+     $post_content = $_POST['content'];
+
+    if ($post_title == "" or $post_author == "" or $post_keywords == "" or
+        $post_content == ""){
+
+        echo "<script>alert('Please Fill in the missing fields')</script>";
+        exit;
+    }
+
+    else {
+        //moving the image in the images folder
+        move_uploaded_file($image_tmp, "../images/$post_image");
+
+        $insert_post = "INSERT INTO posts (post_title, post_date, post_author, post_image,
+      post_keywords, post_content) VALUES ('$post_title', '$post_date', '$post_author',
+      '$post_image', '$post_keywords', '$post_content')";
+
+
+        //if the insertion is successful
+        if ($connect->query($insert_post) === TRUE) {
+           echo "<h1 align='centre'>Post successfully published</h1>";
+        }
+    }
+
 }
 
 
