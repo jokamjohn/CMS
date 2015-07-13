@@ -3,7 +3,7 @@
     <title>Insert Post</title>
 </head>
 <body>
-
+<form action="insert_post.php" method="post" enctype="multipart/form-data">
     <table align="center">
         <tr>
             <td align="center"><h1>New Post</h1></td>
@@ -44,5 +44,6 @@
                 </label></td>
         </tr>
     </table>
+</form>
 </body>
 </html>
