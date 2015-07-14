@@ -58,6 +58,7 @@
 </html>
 
 <?php
+
 $connect = mysqli_connect("localhost","root","Kags02244","cms");
 mysqli_select_db($connect,"cms");
 
@@ -65,7 +66,7 @@ mysqli_select_db($connect,"cms");
 if(isset($_POST['submit'])){
      $post_title = $_POST['title'];
      $post_author = $_POST['author'];
-     $post_date = date('d-m-y');
+     $post_date = date('y-m-d');
      $post_keywords = $_POST['keywords'];
      $post_image = $_FILES['image'] ['name'];
      $image_tmp =$_FILES['image']['tmp_name'];
