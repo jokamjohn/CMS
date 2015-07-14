@@ -26,7 +26,7 @@
     <tr>
         <td colspan="10" align="center" bgcolor="aqua"><h1>View all Posts</h1></td>
     </tr>
-
+<!--table heading-->
     <tr bgcolor="#f5f5dc">
         <th>Post No:</th>
         <th>Post Date:</th>
@@ -85,7 +85,7 @@ while($row = mysqli_fetch_array($query_posts,MYSQLI_BOTH)) {
         </td>
 
         <td>
-            <a href="edit.php">Edit</a>
+            <a href="edit.php?edit=<?php echo $post_id ?>">Edit</a>
         </td>
 
 
