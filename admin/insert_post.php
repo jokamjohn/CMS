@@ -83,13 +83,11 @@ if(isset($_POST['submit'])){
         //moving the image in the images folder
         move_uploaded_file($image_tmp, "../images/$post_image");
 
-        $insert_post = "INSERT INTO posts (post_title, post_date, post_author, post_image,
-      post_keywords, post_content) VALUES ('$post_title', '$post_date', '$post_author',
-      '$post_image', '$post_keywords', '$post_content')";
+        $insert_post = "insert into posts (post_title, post_date, post_author, post_image, post_keywords, post_content) VALUES ('$post_title', '$post_date', '$post_author', '$post_image', '$post_keywords', '$post_content')";
 
-
+//$connect->query($insert_post) === TRUE
         //if the insertion is successful
-        if ($connect->query($insert_post) === TRUE) {
+        if (mysqli_query($connect,$insert_post)) {
            echo "<h1 align='centre'>Post successfully published</h1>";
         }
     }
