@@ -21,15 +21,16 @@ while($row = mysqli_fetch_array($query_posts,MYSQLI_BOTH)){
 
 ?>
 
+    <a href="pages.php?id=<?php echo $post_id ?>">
     <h2><b><?php echo "$post_title <br>";?></b></h2>
-
+    </a>
     <p align="left">Published on:<b><?php echo $post_date ?></b></p>
 
     <p align="right">Posted by:<b><?php echo $post_author ?></b></p>
 
     <center><img src="images/<?php echo $post_image; ?>" alt="image" width="500" height="400"/></center>
 
-    <p align="justify"><?php echo $post_content ?><a href="pages.php"> Read more</a></p>
+    <p align="justify"><?php echo $post_content ?><a href="pages.php?id=<?php echo $post_id ?>"> Read more</a></p>
 
 
 
