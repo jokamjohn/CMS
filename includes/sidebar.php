@@ -1,5 +1,12 @@
-<div id="sidebar">Side bar
-
+<div id="sidebar">
+    
+    <div>
+        <form action="../search.php" method="get" enctype="multipart/form-data">
+            <input type="text" name="value" placeholder="search site"/>
+            <input type="submit" name="search" value="Submit"/>
+        </form>
+    </div>
+    
     <?php
 
     $connect = mysqli_connect("localhost","root","Kags02244","cms");
