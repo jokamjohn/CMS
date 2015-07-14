@@ -27,6 +27,8 @@ while($row = mysqli_fetch_array($query_posts,MYSQLI_BOTH)){
 
     <p align="right">Posted by:<b><?php echo $post_author ?></b></p>
 
+    <center><img src="images/<?php echo $post_image; ?>" alt="image" width="500" height="400"/></center>
+
     <p align="justify"><?php echo $post_content ?></p>
 
 
