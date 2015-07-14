@@ -78,10 +78,10 @@
       <file leaf-file-name="content_area.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/content_area.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7145594" vertical-offset="437" max-vertical-offset="1188">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.36015326" vertical-offset="350" max-vertical-offset="1215">
+              <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
               <folding>
-                <marker date="1436861259650" expanded="true" signature="155:174" placeholder="SELECT * fro..posts..." />
+                <marker date="1436861852417" expanded="true" signature="155:174" placeholder="SELECT * fro..posts..." />
               </folding>
             </state>
           </provider>
@@ -544,7 +544,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436860804322</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added post images to the posts">
+      <created>1436861510468</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1436861510468</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -601,7 +607,8 @@
     <MESSAGE value="test works" />
     <MESSAGE value="Posting data to the database" />
     <MESSAGE value="now working" />
-    <option name="LAST_COMMIT_MESSAGE" value="now working" />
+    <MESSAGE value="added post images to the posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="added post images to the posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -632,7 +639,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1436861259650" expanded="true" signature="155:174" placeholder="SELECT * fro..posts..." />
+            <marker date="1436861852417" expanded="true" signature="155:174" placeholder="SELECT * fro..posts..." />
           </folding>
         </state>
       </provider>
@@ -706,7 +713,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1436861259650" expanded="true" signature="155:174" placeholder="SELECT * fro..posts..." />
+            <marker date="1436861852417" expanded="true" signature="155:174" placeholder="SELECT * fro..posts..." />
           </folding>
         </state>
       </provider>
@@ -872,10 +879,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/content_area.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7145594" vertical-offset="437" max-vertical-offset="1188">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.36015326" vertical-offset="350" max-vertical-offset="1215">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
           <folding>
-            <marker date="1436861259650" expanded="true" signature="155:174" placeholder="SELECT * fro..posts..." />
+            <marker date="1436861852417" expanded="true" signature="155:174" placeholder="SELECT * fro..posts..." />
           </folding>
         </state>
       </provider>

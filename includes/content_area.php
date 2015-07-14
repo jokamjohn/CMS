@@ -4,7 +4,7 @@
 $connect = mysqli_connect("localhost","root","Kags02244","cms");
 mysqli_select_db($connect,"cms");
 
-$select_posts = "SELECT * from posts";
+$select_posts = "SELECT * from posts";// orderby asc or desc or rand()
 
 $query_posts = mysqli_query($connect,$select_posts,MYSQLI_STORE_RESULT);
 
@@ -17,7 +17,7 @@ while($row = mysqli_fetch_array($query_posts,MYSQLI_BOTH)){
     $post_author = $row['post_author'];
     $post_image = $row['post_image'];
     $post_keywords = $row['post_keywords'];
-    $post_content = $row['post_content'];
+    $post_content = substr($row['post_content'],0,200);//show only the first 200 characters
 
 ?>
 
@@ -29,7 +29,8 @@ while($row = mysqli_fetch_array($query_posts,MYSQLI_BOTH)){
 
     <center><img src="images/<?php echo $post_image; ?>" alt="image" width="500" height="400"/></center>
 
-    <p align="justify"><?php echo $post_content ?></p>
+    <p align="justify"><?php echo $post_content ?><a href="pages.php"> Read more</a></p>
+
 
 
 
