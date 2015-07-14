@@ -6,12 +6,14 @@
 <body>
 
 <div id="header">
+    <a href="index.php">
     <h1>Welcome to the Admin Panel</h1>
+    </a>
 </div>
 
 <div id="sidebar">
     <h2><a href="#">Logout</a></h2>
-    <h2><a href="#">View Posts</a></h2>
+    <h2><a href="../admin/viewpost.php">View Posts</a></h2>
     <h2><a href="#">Insert New posts</a></h2>
     <h2><a href="#">View Comments</a></h2>
 </div>
