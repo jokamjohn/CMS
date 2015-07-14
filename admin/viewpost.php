@@ -81,7 +81,7 @@ while($row = mysqli_fetch_array($query_posts,MYSQLI_BOTH)) {
         </td>
 
         <td>
-            <a href="delete.php">Delete</a>
+            <a href="delete.php?del=<?php echo $post_id ?>">Delete</a>
         </td>
 
         <td>
