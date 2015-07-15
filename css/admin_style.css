@@ -47,12 +47,12 @@ body {
     text-decoration: none;
 }
 
-#sidebar a:hover {
-    color: black;
-    font-family: fantasy;
-    font-size: medium;
-    animation: none;
-}
+/*#sidebar a:hover {*/
+    /*color: black;*/
+    /*font-family: fantasy;*/
+    /*font-size: medium;*/
+    /*animation: none;*/
+/*}*/
 
 #welcome {
     margin: 10px;

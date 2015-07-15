@@ -1,15 +1,15 @@
 
 <html>
 <head>
-    <title>Insert Post</title>
+    <title>Add Post</title>
 </head>
 <body>
 <!--form-->
 <form action="insert_post.php" method="post" enctype="multipart/form-data">
 
-    <table align="center">
+    <table border="5" bgcolor="#5f9ea0" align="center">
         <tr>
-            <td align="center"><h1>New Post</h1></td>
+            <td colspan="10" align="center"><h1>New Post</h1></td>
         </tr>
         
         <tr>
@@ -48,8 +48,8 @@
         </tr>
 
         <tr>
-            <td><label>
-                    <input type="submit" value="Publish Post" name="submit"/>
+            <td colspan="10" align="center"><label>
+                    <input type="submit"  value="Publish Post" name="submit"/>
                 </label></td>
         </tr>
 
@@ -90,7 +90,9 @@ if(isset($_POST['submit'])){
 //$connect->query($insert_post) === TRUE
         //if the insertion is successful
         if (mysqli_query($connect,$insert_post)) {
-           echo "<h1 align='centre'>Post successfully published</h1>";
+            echo "<script>alert('Post successfully Published')</script>";
+
+            echo "<script>window.open('viewpost.php', '_self')</script>";
         }
     }
 
