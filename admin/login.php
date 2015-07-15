@@ -1,3 +1,10 @@
+    <?php
+        /*
+         * start session in order to use it in the page
+         */
+        session_start();
+    ?>
+
 <html>
 <head>
     <title>
@@ -55,6 +62,34 @@
             </table>
         </form>
     </div>
+            <?php
 
+                $connect = mysqli_connect("localhost","root","Kags02244","cms");
+                mysqli_select_db($connect,"cms");
+
+                if(isset($_POST['login'])){
+
+                    $user_name = $_POST['user_name'];
+                    $pass_word = $_POST['pass_word'];
+
+                    $login_select = "SELECT * FROM admin_login WHERE user_name = '$user_name' AND pass_word = '$pass_word'";
+                    $login_query = mysqli_query($connect,$login_select,MYSQLI_STORE_RESULT);
+
+                        if(mysqli_num_rows($login_query) > 0){
+                            /*
+                             * if true create a session for that user_name
+                             */
+                            $_SESSION['user_name'] = $user_name;
+                            echo "<script>window.open('index.php','_self')</script>";
+                        }
+                        else {
+
+                            echo "<script>alert('Wrong username or password')</script>";
+
+                        }
+                }
+
+
+            ?>
 </body>
 </html>
