@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db8ddbd6-cec9-4319-a94e-d58749b03805" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/admin_style.css" afterPath="$PROJECT_DIR$/css/admin_style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/content_area.php" afterPath="$PROJECT_DIR$/includes/content_area.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/delete.php" afterPath="$PROJECT_DIR$/admin/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/insert_post.php" afterPath="$PROJECT_DIR$/admin/insert_post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages.php" afterPath="$PROJECT_DIR$/pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/viewpost.php" afterPath="$PROJECT_DIR$/admin/viewpost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CMS.iws" />
@@ -110,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.727273" vertical-offset="0" max-vertical-offset="1134">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.5551402" vertical-offset="0" max-vertical-offset="1782">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -166,10 +160,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7570093" vertical-offset="0" max-vertical-offset="1755">
+            <state vertical-scroll-proportion="-12.272727" vertical-offset="0" max-vertical-offset="1755">
               <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
               <folding />
             </state>
@@ -194,7 +188,6 @@
         <option value="$PROJECT_DIR$/includes/sidebar.php" />
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/admin/edit.php" />
-        <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/admin/insert_post.php" />
         <option value="$PROJECT_DIR$/includes/content_area.php" />
@@ -203,6 +196,7 @@
         <option value="$PROJECT_DIR$/admin/viewpost.php" />
         <option value="$PROJECT_DIR$/css/admin_style.css" />
         <option value="$PROJECT_DIR$/admin/login.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
       </list>
     </option>
   </component>
@@ -635,7 +629,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436952935799</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added login page">
+      <created>1436955162207</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1436955162207</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -749,7 +749,8 @@
     <MESSAGE value="retrieving data to the table.....edit page" />
     <MESSAGE value="Edit page complete, added update" />
     <MESSAGE value="added insert post page to the admin page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added insert post page to the admin page" />
+    <MESSAGE value="added login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1107,14 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.727273" vertical-offset="0" max-vertical-offset="1134">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-45.0" vertical-offset="0" max-vertical-offset="1701">
@@ -1188,8 +1181,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7570093" vertical-offset="0" max-vertical-offset="1755">
+        <state vertical-scroll-proportion="-12.272727" vertical-offset="0" max-vertical-offset="1755">
           <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5551402" vertical-offset="0" max-vertical-offset="1782">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
