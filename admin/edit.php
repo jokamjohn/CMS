@@ -53,7 +53,7 @@ mysqli_select_db($connect,"cms");
 <!--php code-->
 
 <!--form-->
-<form action="edit.php" method="post" enctype="multipart/form-data">
+<form action="edit.php?edit_form=<?php echo $post_id ?>" method="post" enctype="multipart/form-data">
 
     <table align="center" border="5" width="400" >
         <tr>
@@ -98,10 +98,9 @@ mysqli_select_db($connect,"cms");
 
         <tr>
             <td align="center" colspan="10"><label>
-                    <input type="submit" value="Update post" name="submit"/>
+                    <input type="submit" value="Update Post" name="update"/>
                 </label></td>
         </tr>
-
     </table>
 </form>
 <!--form-->
@@ -109,6 +108,48 @@ mysqli_select_db($connect,"cms");
         }
         }
              ?>
+<!--getting the sent edit_form id and updating the post-->
+    <?php
+
+            if(isset($_POST['update'])){
+                $update_id = $_GET['edit_form'];
+                $post_title = $_POST['title'];
+                $post_author = $_POST['author'];
+                $post_date = date('y-m-d');
+                $post_keywords = $_POST['keywords'];
+                $post_image = $_FILES['image'] ['name'];
+                $image_tmp =$_FILES['image']['tmp_name'];
+                $post_content = $_POST['content'];
+
+
+                if ($post_title == "" or $post_author == "" or $post_keywords == "" or
+                    $post_content == "" ){
+
+                    echo "<script>alert('The table cannot be empty')</script>";
+                    exit;
+                }
+
+                else {
+
+                    move_uploaded_file($image_tmp, "../images/$post_image");
+
+                    $update_post = "UPDATE posts SET post_title = '$post_title', post_date = '$post_date', post_author = '$post_author', post_image = '$post_image', post_keywords = '$post_keywords', post_content = '$post_content' WHERE post_id = '$update_id';";
+                    //do not forget to add the post id to be updated else the whole table will be updated with the same post
+
+                    //if the insertion is successful
+                    if (mysqli_query($connect, $update_post)) {
+                        echo "<script>alert('Post successfully updated')</script>";
+
+                        echo "<script>window.open('viewpost.php', '_self')</script>";
+                    }
+                }
+
+
+            }
+
+
+    ?>
+
 </body>
 </html>
 

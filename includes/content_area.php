@@ -10,7 +10,7 @@ $query_posts = mysqli_query($connect,$select_posts,MYSQLI_STORE_RESULT);
 
 while($row = mysqli_fetch_array($query_posts,MYSQLI_BOTH)){
     //prints the array
-//    print_r($row);
+    //print_r($row);
     $post_id = $row['post_id'];
     $post_title = $row['post_title'];
     $post_date = $row['post_date'];
