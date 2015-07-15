@@ -7,7 +7,7 @@
 <!--form-->
 <form action="insert_post.php" method="post" enctype="multipart/form-data">
 
-    <table border="5" bgcolor="#5f9ea0" align="center">
+    <table border="5" bgcolor="#5f9ea0" align="center" width="50">
         <tr>
             <td colspan="10" align="center"><h1>New Post</h1></td>
         </tr>

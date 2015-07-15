@@ -35,7 +35,7 @@
 
 <!--sidebar-->
     <div id="sidebar">
-        <h2><a href="#">Logout</a></h2>
+        <h2><a href="logout.php">Logout</a></h2>
         <h2><a href="../admin/viewpost.php">View Posts</a></h2>
         <h2><a href="../admin/index.php?id=insert">Insert New posts</a></h2>
         <h2><a href="#">View Comments</a></h2>
