@@ -26,7 +26,7 @@
 
     while($row = mysqli_fetch_array($query_post,MYSQLI_BOTH)){
         //prints the array
-//    print_r($row);
+        //    print_r($row);
         $post_id = $row['post_id'];
         $post_title = $row['post_title'];
         $post_date = $row['post_date'];
@@ -46,11 +46,6 @@
         <center><img src="images/<?php echo $post_image; ?>" alt="image" width="500" height="400"/></center>
 
         <p align="justify"><?php echo $post_content ?></p>
-
-
-
-
-
     <?php } } ?>
 
 </div>
@@ -58,5 +53,6 @@
 <div><?php include("includes/sidebar.php")?></div>
 
 <div id="footer">Footer</div>
+
 </body>
 </html>
