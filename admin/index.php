@@ -7,11 +7,7 @@
             header("location: login.php");
         }
         else {
-
-
     ?>
-
-
 <html>
 
     <head>
@@ -35,6 +31,7 @@
 
 <!--sidebar-->
     <div id="sidebar">
+        Welcome: <h2><?php echo $_SESSION['user_name']?></h2>
         <h2><a href="logout.php">Logout</a></h2>
         <h2><a href="../admin/viewpost.php">View Posts</a></h2>
         <h2><a href="../admin/index.php?id=insert">Insert New posts</a></h2>

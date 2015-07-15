@@ -1,3 +1,15 @@
+<?php
+session_start();
+if(!isset($_SESSION['user_name'])){
+    /*
+     * Redirect to the login page
+     */
+    header("location: login.php");
+}
+else {
+
+
+?>
 <html>
 <head>
     <title>Edit Post</title>
@@ -152,7 +164,7 @@ mysqli_select_db($connect,"cms");
 
 </body>
 </html>
-
+<?php } ?>
 
 
 

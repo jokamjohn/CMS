@@ -69,8 +69,16 @@
 
                 if(isset($_POST['login'])){
 
-                    $user_name = $_POST['user_name'];
-                    $pass_word = $_POST['pass_word'];
+                    /*
+                     * escape function validates the characters entered in the fields.
+                     */
+                    $user_name = mysqli_escape_string($connect,$_POST['user_name']);
+                    $pass_word = mysqli_escape_string($connect,$_POST['pass_word']);
+
+                    /*
+                     * encrypting the password
+                     */
+                    $encrypt = md5($pass_word);
 
                     $login_select = "SELECT * FROM admin_login WHERE user_name = '$user_name' AND pass_word = '$pass_word'";
                     $login_query = mysqli_query($connect,$login_select,MYSQLI_STORE_RESULT);

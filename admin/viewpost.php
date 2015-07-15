@@ -1,3 +1,15 @@
+    <?php
+    session_start();
+    if(!isset($_SESSION['user_name'])){
+        /*
+         * Redirect to the login page
+         */
+        header("location: login.php");
+    }
+    else {
+
+
+    ?>
 <html>
 <head>
     <title>Admin Panel</title>
@@ -94,3 +106,5 @@
 
 </body>
 </html>
+
+    <?php } ?>
